@@ -3,10 +3,11 @@ body {
     font-family: "Roboto", sans-serif;
 
     background-color: var(--bacgrount-progject-color);
+    color: #ffffff;
 }
 
 :root {
-    --bacgrount-progject-color: rgba(20, 20, 20, 0.3);
+    --bacgrount-progject-color: rgba(20, 20, 20, 1);
 }
 /* ------------------------CSS-RESET------------------- */
 .link {
@@ -32,6 +33,20 @@ ul {
 img {
     display: block;
 }
+
+.fulse-title {
+    /* --скрытый заголовок */
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 /* ----------------------------------------------------- */
 /* -------------------------- A L L ---------------- */
 .container {
@@ -40,10 +55,14 @@ img {
     padding-right: 15px;
     margin: 0 auto;
 
-    outline: 1px solid olive;
+    /* outline: 1px solid olive; */
 }
 
 /* --------------------H E A D E R-------------- */
+.header {
+    border-bottom: 1px solid #f25c05;
+    padding-bottom: 8px;
+}
 
 /* navigation---------------- */
 .link-logo {
@@ -104,25 +123,169 @@ img {
     border-radius: 50%;
     border: 1px solid #bfbfbf;
 }
-/* ---------------------------H E R R O----------- */
+/* ------------------------H E R R O----------- */
+.hero {
+    padding-top: 190px;
+    padding-bottom: 65px;
+    background-image: url(../img/background-hero.jpg);
+    background-size: 1440px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
+.herro-text-background {
+    background-color: rgba(242, 92, 5, 0.5);
+    backdrop-filter: blur(10px);
+    max-width: 706px;
+}
 
-.hero-list {
+.hero-text {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.4;
+    color: #ffffff;
+    padding: 15px 34px;
+}
+
+/* -------------------E A T _ S U B M E N U---- */
+.eat-submenu {
+    padding-top: 75px;
+    padding-bottom: 139px;
+}
+
+.eat-list {
     display: flex;
+    justify-content: space-between;
     width: 100%;
 }
 
-.hero-item {
-    padding: 10px;
-}
-
-.hero-item + .hero-item {
+.eat-item + .eat-item {
     margin-left: 10px;
 }
 
-.hero-link-eat {
+.eat-link-eat {
     display: block;
     max-width: 189px;
     height: 40px;
-    background-color: olive;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: #ffffff;
+    color: #000000;
+
+    padding-top: 10px;
+
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 0.85;
+
+    width: 189px;
 }
+
+.eat-link-eat:hover,
+.eat-link-eat:focus {
+    background-color: #f25c05;
+}
+
+/* --------------------I N F O__C O O C K I N G--------- */
+.info-cooking {
+    padding-bottom: 80px;
+}
+
+.coock-block {
+    display: flex;
+    justify-content: space-evenly;
+    /* outline: solid 1px #ffffff; */
+}
+
+.coock-text-block,
+.coock-photo-block {
+    width: calc((100% - 109px) / 2);
+}
+
+.coock-list {
+    padding-left: 10px;
+}
+
+.coock-list {
+    margin-left: 10px;
+}
+
+.coock-title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 0.85;
+
+    margin-bottom: 20px;
+}
+
+.coock-title-left {
+    color: #ff8126;
+}
+
+.coock-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.53;
+}
+
+.coock-item + .coock-item {
+    margin-top: 20px;
+}
+
+.coock-more-link {
+    margin-top: 20px;
+    display: block;
+    background-color: olive;
+    text-align: center;
+    padding: 24px;
+    width: 262px;
+    height: 78px;
+
+    font-size: 24px;
+    line-height: 1.24;
+    color: #ffffff;
+}
+
+/* -----------------------A B O U T__F O O D--------------- */
+.about-food {
+    padding-bottom: 80px;
+}
+
+.about-food-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-food-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-food-bacground {
+    margin-bottom: 20px;
+    position: relative;
+    width: 180px;
+    height: 180px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.about-food-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-food-text {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.33;
+    text-align: center;
+}
+/* --------------------I N F O__H E A L T H__F O O D--------------- */
+
