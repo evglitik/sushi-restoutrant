@@ -1,0 +1,128 @@
+/* ---------------------------------------------------- */
+body {
+    font-family: "Roboto", sans-serif;
+
+    background-color: var(--bacgrount-progject-color);
+}
+
+:root {
+    --bacgrount-progject-color: rgba(20, 20, 20, 0.3);
+}
+/* ------------------------CSS-RESET------------------- */
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+img {
+    display: block;
+}
+/* ----------------------------------------------------- */
+/* -------------------------- A L L ---------------- */
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+    outline: 1px solid olive;
+}
+
+/* --------------------H E A D E R-------------- */
+
+/* navigation---------------- */
+.link-logo {
+    display: block;
+    margin-right: 100px;
+}
+
+.logo-img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav-logo-text {
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+
+    color: #f25c05;
+}
+
+.navigation {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-item + .nav-item {
+    margin-left: 50px;
+}
+
+.nav-link {
+    font-size: 18px;
+    line-height: 0.85;
+    color: #ffffff;
+}
+
+.nav-list-btn {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-btn-item + .nav-btn-item {
+    margin-left: 10px;
+}
+
+.btn-nav {
+    padding: 0;
+
+    width: 60px;
+    height: 60px;
+
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #bfbfbf;
+}
+/* ---------------------------H E R R O----------- */
+
+
+.hero-list {
+    display: flex;
+    width: 100%;
+}
+
+.hero-item {
+    padding: 10px;
+}
+
+.hero-item + .hero-item {
+    margin-left: 10px;
+}
+
+.hero-link-eat {
+    display: block;
+    max-width: 189px;
+    height: 40px;
+    background-color: olive;
+}
