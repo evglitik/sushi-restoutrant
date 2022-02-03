@@ -8,6 +8,7 @@ body {
 
 :root {
     --bacgrount-progject-color: rgba(20, 20, 20, 1);
+    --accent-collor: #f25c05;
 }
 /* ------------------------CSS-RESET------------------- */
 .link {
@@ -60,7 +61,7 @@ img {
 
 /* --------------------H E A D E R-------------- */
 .header {
-    border-bottom: 1px solid #f25c05;
+    border-bottom: 1px solid var(--accent-collor);
     padding-bottom: 8px;
 }
 
@@ -68,6 +69,8 @@ img {
 .link-logo {
     display: block;
     margin-right: 100px;
+    color: var(--accent-collor);
+    padding: 5px;
 }
 
 .logo-img {
@@ -81,7 +84,13 @@ img {
     line-height: 1;
     letter-spacing: -0.02em;
 
-    color: #f25c05;
+    color: currentColor;
+}
+
+.link-logo:hover,
+.link-logo:focus {
+    color: #ffffff;
+
 }
 
 .navigation {
@@ -99,9 +108,41 @@ img {
 }
 
 .nav-link {
+    position: relative;
     font-size: 18px;
     line-height: 0.85;
     color: #ffffff;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: var(--accent-collor);
+}
+
+.nav-link:hover>.nav-svg-icon-down {
+    fill: currentColor;
+    opacity: 0;
+}
+
+.nav-link:hover>.nav-svg-icon-up {
+    fill: currentColor;
+    opacity: 1;
+}
+
+.nav-svg-icon-down {
+    fill: currentColor;
+    transform: rotate(180deg); 
+}
+
+.nav-svg-icon-up {
+    fill: currentColor;
+}
+
+.nav-svg-icon-up {
+    opacity: 0;
+    position: absolute;
+    top: 5px;
+    right: 0;
 }
 
 .nav-list-btn {
@@ -123,6 +164,18 @@ img {
     border-radius: 50%;
     border: 1px solid #bfbfbf;
 }
+
+.btn-nav:hover,
+.btn-nav:focus {
+    background-color: var(--accent-collor);
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.nav-svg-icon {
+    fill: currentColor;
+}
+
 /* ------------------------H E R R O----------- */
 .hero {
     padding-top: 190px;
