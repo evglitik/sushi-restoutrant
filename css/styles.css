@@ -399,10 +399,75 @@ img {
 
 .breackfest-hf-text {
     padding-bottom: 16px;
+    margin-bottom: 32px;
 
     font-size: 14px;
     line-height: 3.43;
     text-align: center;
 
     color: #000000;
+}
+
+/* menuuu----------- */
+
+.hf-menu-container {
+    border: 2px dashed #7B61FF;
+    background-image: url(../img/hf-background-menu.svg);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position-x: 79%;
+    background-position-y: 36%;
+} 
+
+.hf-breackfast-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hf-breackfast-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hf-breackfast-list-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.hf-breackfast-list-item:nth-child(even) .hf-breackfest-menu-text-card {
+    flex-direction: row-reverse;
+}
+
+.hf-breackfast-list-item:nth-child(even) .hf-breackfest-menu-text-card .hf-breackfest-menutextcard {
+    text-align: right;
+}
+
+.hf-breackfest-menu-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 0.97;
+    text-align: center;
+}
+
+.hf-breackfest-menu-price {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 0.81;
+}
+
+.hf-breackfest-menu-text-card {
+    display: flex;
+    flex-basis: calc(100% / 2 - 50px);
+    border-bottom: dashed 2px #ffffff;
+}
+
+.hf-breackfest-menu-text {
+    font-size: 24px;
+    line-height: 2.08;
+}
+
+.hf-breackfest-menu-text {
+    display: flex;
 }
