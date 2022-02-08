@@ -71,6 +71,8 @@ img {
     margin-right: 100px;
     color: var(--accent-collor);
     padding: 5px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-img {
@@ -111,6 +113,8 @@ img {
     font-size: 18px;
     line-height: 0.85;
     color: #ffffff;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:focus,
@@ -162,6 +166,9 @@ img {
     cursor: pointer;
     border-radius: 50%;
     border: 1px solid #bfbfbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-nav:hover,
@@ -215,6 +222,16 @@ img {
     margin-left: 10px;
 }
 
+.eat-item {
+    box-shadow: 1px 2px 5px #000000;
+    padding-bottom: 10px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.eat-item:hover {
+    box-shadow: 1px 2px 15px #000000;
+}
+
 .eat-link-eat {
     display: block;
     max-width: 189px;
@@ -234,11 +251,15 @@ img {
     line-height: 0.85;
 
     width: 189px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .eat-link-eat:hover,
 .eat-link-eat:focus {
     background-color: #f25c05;
+    color: #ffffff;
 }
 
 /* --------------------I N F O__C O O C K I N G--------- */
@@ -290,7 +311,7 @@ img {
 .coock-more-link {
     margin-top: 20px;
     display: block;
-    background-color: olive;
+    background-color: #f25c05;
     text-align: center;
     padding: 24px;
     width: 262px;
@@ -299,6 +320,19 @@ img {
     font-size: 24px;
     line-height: 1.24;
     color: #ffffff;
+
+    box-shadow: 1px 2px 4px #000000;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.coock-more-link:hover,
+.coock-more-link:focus {
+    color: #000000;
+    background-color: #ff8126;
+    box-shadow: 2px 4px 8px #000000;
 }
 
 /* -----------------------A B O U T__F O O D--------------- */
@@ -489,6 +523,12 @@ img {
 .sale-item {
     border: #f25c05 solid 1px;
     width: calc(100% / 4 - 15px);
+    box-shadow: 2px 4px 7px #000000;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sale-item:hover {
+    box-shadow: 2px 7px 10px #000000, -2px 7px 10px #000000;
 }
 
 .sale-item + .sale-item {
@@ -542,5 +582,149 @@ img {
     color: #ffffff;
     text-decoration: none;
 
-    background-color: #FF8126;
+    background-color: #ff8126;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.sale-link:hover,
+.sale-link:focus {
+    background-color: #f25c05;
+    color: #000000;
+    box-shadow: 1px 2px 3px #000000;
+}
+
+/* ---------------F O R M---------------- */
+.form-container {
+    padding: 44px 95px 48px;
+    width: 860px;
+    min-height: 545px;
+    margin: 0 auto 0 auto;
+
+    border: 1px solid #ffffff;
+}
+
+.form-text {
+    margin-bottom: 60px;
+}
+
+.form-text-sup {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.33;
+    text-align: center;
+
+    color: #ffffff;
+}
+
+.form-text-sub {
+    font-size: 14px;
+    line-height: 3.43;
+    text-align: center;
+
+    color: #ffffff;
+}
+
+.input-container {
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-reservation {
+    width: 304px;
+    height: 60px;
+
+    padding: 7px 15px;
+    border: none;
+}
+
+.input-reservation:nth-child(n + 3) {
+    margin-top: 60px;
+}
+
+.btn-reservation {
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 329px;
+    height: 58px;
+
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 2;
+    text-align: center;
+    color: #ffffff;
+
+    border: none;
+    background-color: #f25c05;
+    box-shadow: 0px 4px 4px #000000;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-reservation:hover,
+.btn-reservation:focus {
+    background-color: #ff8126;
+    color: #000000;
+}
+
+/* ------------------S O C I A L__L I N K--------------- */
+.social-link-section {
+    padding-bottom: 139px;
+}
+
+.social-link-container {
+    border: 1px solid #ffffff;
+    padding: 51px 334px;
+}
+
+.social-link-title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 0.82;
+    text-align: center;
+
+    color: #ffffff;
+
+    margin-bottom: 30px;
+}
+
+.social-link-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link-item + .social-link-item {
+    margin-left: 30px;
+}
+
+.social-link {
+    display: block;
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+    color: #000000;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),    color 250ms cubic-bezier(0.4, 0, 0.2, 1),    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link-icon {
+    fill: currentColor;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: #f25c05;
+    color: #ffffff;
+    box-shadow: 2px 2px 4px #000000, -2px 2px 4px #000000;
+} 
+
+/*  250ms cubic-bezier(0.4, 0, 0.2, 1), */
